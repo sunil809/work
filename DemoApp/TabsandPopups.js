@@ -7,6 +7,7 @@ describe("Handling Tabs and Popups",function(){
         browser.get("http://www.hdfcbank.com/");
         element(by.id("loginsubmit")).click();
 
+
         browser.getAllWindowHandles().then(function(handles){
 
             browser.switchTo().window(handles[1]).then(function(){
